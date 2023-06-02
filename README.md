@@ -1,15 +1,27 @@
 # Dreambooth Stable Diffusion
+
+The rapid improvement in the fitting ability of models in recent years has seen the shortcomings of various data in expression recognition begin to emerge. This paper proposes a new method to generate accurate and new expressions with different facial features of people. It can be used to significantly improve the accuracy of  recognition models. And the feasibility of such a model for the task is analysed using a variety of methods.
+
+![pipeline](./pics/pipeline.png)
+
 This project uses Dreambooth Stable Diffusion training to generate faces with AU information.
 
 - This experiment uses BP4D as the training data. While using ethnicity, age, gender and AU as prompts to train stable diffusion. enables the model to generate custom Action Units of faces.
 - Deployment of deepspeed enables this project can be trained on single 1080ti
 
-| prompt                    | demo               |
-| ------------------------- | ------------------ |
-| European,female,AU15,AU24 | ![1](./pics/4.gif) |
-| Asian,female,AU10,AU12    | ![1](./pics/2.gif) |
-| Asian,female,young,AU15   | ![1](./pics/3.gif) |
-| Africa,male,AU10,AU12     | ![1](./pics/5.gif) |
+
+
+Different AU of mixed person:
+
+![au-mixed](./pics/au-mixed.png)
+
+Generated person:
+
+![mixed-person](./pics/mixed-person.png)
+
+generated person of same AU:
+
+![au4](./pics/au4.png)
 
 ## Method
 
